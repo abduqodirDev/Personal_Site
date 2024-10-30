@@ -7,8 +7,8 @@ class AccountAdmin(admin.ModelAdmin):
     list_display = ['id', 'user', 'image', 'rezyume']
     list_display_links = ['id', 'user']
 
-    def has_add_permission(self, request):
-        return False
+    # def has_add_permission(self, request):
+    #     return False
 
 
 @admin.register(Projects)
